@@ -34,7 +34,7 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
 
     @Override
     public void onApplicationEvent(ContextRefreshedEvent event) {
-    	log.debug("RecipeBootstrap: onApplicationEvent");
+    	log.debug("onApplicationEvent");
         recipeRepository.saveAll(getRecipes());
     }
 
